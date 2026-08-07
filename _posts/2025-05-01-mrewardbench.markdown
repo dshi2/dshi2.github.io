@@ -13,7 +13,7 @@ arxiv: https://arxiv.org/pdf/2410.15522
 code: https://github.com/Cohere-Labs-Community/m-rewardbench  # replace with actual repo
 dataset: https://huggingface.co/datasets/CohereLabsCommunity/multilingual-reward-bench  # replace with dataset
 leaderboard: https://coherelabscommunity-m-rewardbench.hf.space/  # replace if available
-excerpt: "This work introduces M-REWARDBENCH, the first large-scale benchmark for evaluating reward models (RMs) in multilingual settings, encompassing 23 languages across 8 scripts and 5 language families. The benchmark evaluates four key capabilities—chat, safety, reasoning, and translation - using 2.87k human-aligned preference instances. A total of 25 reward models, including Classifier, Generative, and Implicit (DPO-trained) types, are assessed. Results show that Generative RMs, such as GPT-4 Turbo, achieve the highest multilingual performance and cross-lingual consistency, with only a 3% average drop compared to English. In contrast, Classifier and Implicit RMs show greater performance declines (~8–13%) and higher volatility, particularly in subjective domains like chat and safety. RM performance is also influenced by translation quality, language resource availability, and script type."
+excerpt: "This work introduces M-REWARDBENCH, the first large-scale benchmark for evaluating reward models (RMs) in multilingual settings, encompassing 23 languages across 8 scripts and 5 language families. The benchmark evaluates four key capabilities: chat, safety, reasoning, and translation, using 2.87k human-aligned preference instances. A total of 25 reward models, including Classifier, Generative, and Implicit (DPO-trained) types, are assessed. Results show that Generative RMs, such as GPT-4 Turbo, achieve the highest multilingual performance and cross-lingual consistency, with only a 3% average drop compared to English. In contrast, Classifier and Implicit RMs show greater performance declines (~8-13%) and higher volatility, particularly in subjective domains like chat and safety. RM performance is also influenced by translation quality, language resource availability, and script type."
 ---
 
 This work presents **M-REWARDBENCH**, the first large-scale benchmark for evaluating reward models (RMs) in multilingual settings, covering 23 languages across 8 scripts and 5 language families.
@@ -27,13 +27,12 @@ The benchmark assesses four core capabilities:
 
 using 2.87k human-aligned preference instances.
 
-A total of 25 reward models—spanning Classifier, Generative, and Implicit (DPO-trained) types—are evaluated.
+A total of 25 reward models, spanning Classifier, Generative, and Implicit (DPO-trained) types, are evaluated.
 
 ### Key findings:
 
 - Generative RMs (e.g., GPT-4 Turbo) achieve the highest multilingual performance and cross-lingual consistency, with only a 3% average performance drop compared to English.
-- Classifier and Implicit RMs exhibit larger drops (~8–13%) and greater volatility, especially in subjective categories like chat and safety.
+- Classifier and Implicit RMs exhibit larger drops (~8-13%) and greater volatility, especially in subjective categories like chat and safety.
 - Translation quality, language resource availability, and script type (e.g., Latin, Cyrillic) significantly impact RM performance.
 - For translation, the benchmark incorporates easy and hard subsets from the MAPLE dataset across four directions (en↔zh, en↔de), showing that harder tasks consistently reduce accuracy.
-- Performance improves by 1–3% when using higher-quality translations (Google Translate over NLLB-3.3B).
-
+- Performance improves by 1-3% when using higher-quality translations (Google Translate over NLLB-3.3B).
